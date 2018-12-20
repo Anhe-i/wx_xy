@@ -1,0 +1,44 @@
+<!--pages/wuliu/wuliu.wxml-->
+<view class='contain'>
+  
+<view class='border'>
+   <view class='box1'>
+    <view class='top1'>
+      <image src='../../images/beizi.jpg'></image>
+    </view>
+    <view class='top2'>
+      <view class='top2_1'>
+        <text class='chuangdan'>{{cdbz}}</text>
+        <text class='yifahuo'>{{yfh}}</text>
+      </view>
+      <view class='top2_2'>
+        <text class='chuangdanx3'>{{cdbz}}{{cdbz}}{{cdbz}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+  <view class='box2'>
+    <view class='content1'>
+      <view class='content1_line'>  <view class='text'><text>{{date1}} </text><text>{{time1}}</text></view> <image src='../../images/duihao2.jpg'></image> </view>
+      <view class='content1_line'>  <view class='text'><text>{{date2}} </text><text>{{time2}}</text></view> <image src='../../images/renwu1.jpg'></image> </view>
+      <view class='content1_line'>  <view class='text'><text>{{date3}} </text><text>{{time3}}</text></view> <image src='../../images/dian1.png'></image> </view>
+      <view class='content1_line'>  <view class='text'><text>{{date4}} </text><text>{{time4}}</text></view> <image src='../../images/dian1.png'></image> </view>
+      <view class='content1_line'>  <view class='text'><text>{{date5}} </text><text>{{time5}}</text></view> <image src='../../images/dian1.png'></image> </view>
+      <view class='content1_line'>  <view class='text'><text>{{date6}} </text><text>{{time6}}</text></view> <image src='../../images/huoche1.jpg'></image> </view>
+      <view class='content1_line'>  <view class='text'><text>{{date7}} </text><text>{{time7}}</text></view> <image src='../../images/ka1.jpg'></image> </view>
+      <view class='content1_line'>  <view class='text'><text>{{date8}} </text><text>{{time8}}</text></view> <image src='../../images/dingdan1.jpg'></image> </view>
+    </view>
+    <view class='content3'>
+        <view class='content3_line blue'>   <text class='text'>{{qs1}}</text><text>{{qsxx1}}</text> </view> 
+        <view class='content3_line'>        <text class='text'>{{qs2}}</text><text>{{qsxx1}}</text> </view> 
+        <view class='content3_line'>        <text class='text'>{{qs3}}</text><text>{{qsxx1}}</text> </view> 
+        <view class='content3_line'>        <text class='text'>{{qs4}}</text><text>{{qsxx1}}</text> </view> 
+        <view class='content3_line'>        <text class='text'>{{qs5}}</text><text>{{qsxx1}}</text> </view> 
+        <view class='content3_line'>        <text class='text'>{{qs6}}</text><text>{{qsxx1}}</text> </view> 
+        <view class='content3_line'>        <text class='text'>{{qs7}}</text><text>{{qsxx1}}</text> </view> 
+        <view class='content3_line bottom'> <text class='text'>{{qs8}}</text><text>{{qsxx1}}</text> </view> 
+    </view> 
+  </view>
+</view>

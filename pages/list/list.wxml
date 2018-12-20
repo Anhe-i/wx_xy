@@ -1,0 +1,161 @@
+<view class='title'>
+  <view class="{{status == 0 ?'hover' : ''}}" bindtap='change'>已完成订单</view>
+  <view class="{{status == 1 ?'hover' : ''}}" bindtap='change1'>未完成订单</view>
+</view>
+
+<view class='contain'>
+  <!-- 已完成订单内容 -->
+  <scroll-view scroll-y class="content {{status == 0 ?'show' : 'none'}}">
+    <view class='content-t' wx:for="{{items}}" wx:key="key" bindtap='addDetails' data-id='{{item}}'>
+      <view class='con-tent-img'>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='content-font'>
+        <view class='content-f-t'>
+          <view class='cd'>{{item.title}}</view>
+          <view class='num'>￥ {{item.price}}</view>
+        </view>
+        <view class='content-f-t'>
+          <view class='cd cd-one'>{{item.font}}</view>
+        </view>
+        <view class='content-b'>
+          <text class='time'>{{item.time}}</text>
+          <text class='dd'>订单数量: {{item.num}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 未完成订单内容 -->
+  <view class="list-not {{status == 1 ?'show' : 'none'}}">
+    <!-- 未完成订单顶部列表 -->
+    <view class='list-detail'>
+      <view class="{{active == 0 ?'menu' : ''}}" bindtap='change2'>
+        <text>未付款</text>
+        <text>{{payment}}</text>
+      </view>
+      <view class="{{active1 == 0 ?'menu' : ''}}" bindtap='change3'>
+        <text>待发货</text>
+        <text>{{delivery}}</text>
+      </view>
+      <view class="{{active2 == 0 ?'menu' : ''}}" bindtap='change4'>
+        <text>待收货</text>
+        <text>{{shouhuo}}</text>
+      </view>
+      <view class="{{active3 == 0 ?'menu' : ''}}" bindtap='change5'>
+        <text>待评价</text>
+        <text>{{assess}}</text>
+      </view>
+    </view>
+    <!-- 未付款内容 -->
+    <view class="{{menu == 0 ?'show' : 'none'}}">
+      <view class='content-t'>
+        <view class='con-tent-img'>
+          <image src='{{obj.img}}'></image>
+        </view>
+        <view class='content-font'>
+          <view class='content-f-t'>
+            <view class='cd'>{{obj.title}}</view>
+            <view class='num'>￥ {{obj.price}}</view>
+          </view>
+          <view class='content-f-t'>
+            <view class='cd cd-one'>{{obj.font}}</view>
+          </view>
+          <view class='content-b'>
+            <text class='time'>{{obj.time}}</text>
+            <text class='dd'>订单数量: {{obj.num}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='details'>
+        <view>订单编号： {{obj.number}}</view>
+        <view>订单数量： {{obj.num}}</view>
+        <view>订单金额： {{obj.price}}元</view>
+        <view>完成时间： {{obj.time}}</view>
+      </view>
+      <view class='payment' bindtap='addPayment' data-id='{{obj}}'>
+        去付款
+      </view>
+    </view>
+    <!--代发货内容  -->
+    <scroll-view scroll-y class="delivery {{menu1 == 0 ?'show' : 'none'}}">
+      <view class='content-t' wx:for="{{arr}}" wx:for-item="arr" wx:key="key">
+        <view class='con-tent-img'>
+          <image src='{{arr.img}}'></image>
+        </view>
+        <view class='content-font'>
+          <view class='content-f-t'>
+            <view class='cd'>{{arr.title}}</view>
+            <view class='num'>￥ {{arr.price}}</view>
+          </view>
+          <view class='content-f-t'>
+            <view class='cd cd-one'>{{arr.font}}</view>
+          </view>
+          <view class='content-b'>
+            <text class='time'>{{arr.time}}</text>
+            <text class='dd'>订单数量: {{arr.num}}</text>
+          </view>
+        </view>
+      </view> 
+    </scroll-view>
+    <!-- 待收货内容 -->
+    <scroll-view scroll-y class="shou {{menu2 == 0 ?'show' : 'none'}}">
+      <view class='content-t shou1' wx:for="{{shou}}" wx:for-item="shou" wx:key="key">
+        <view class='con-tent-img'>
+          <image src='{{shou.img}}'></image>
+        </view>
+        <view class='content-font shou2'>
+          <view class='content-f-t'>
+            <view class='cd'>{{shou.title}}</view>
+            <view class='num'>￥ {{shou.price}}</view>
+          </view>
+          <view class='content-f-t'>
+            <view class='cd cd-one'>{{shou.font}}</view>
+          </view>
+          <view class='bianhao'>
+            <text>订单编号:{{shou.number}}</text>
+          </view>
+          <view class='shou-b'>
+            <text class='time'>{{shou.time}}</text>
+            <text class='dd'>订单数量: {{shou.num}}</text>
+          </view>
+          <view class='look'>
+            <view bindtap='addLogistics'>查看物流</view>
+            <view class='blue'>确认收货</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 待评价内容部分 -->
+    <scroll-view scroll-y class="shou {{menu3 == 0 ?'show' : 'none'}}">
+      <view class='content-t shou1' wx:for="{{assess_con}}" wx:for-item="assess_con" wx:key="key">
+        <view class='con-tent-img'>
+          <image src='{{assess_con.img}}'></image>
+        </view>
+        <view class='content-font shou2'>
+          <view class='content-f-t'>
+            <view class='cd'>{{assess_con.title}}</view>
+            <view class='num'>￥ {{assess_con.price}}</view>
+          </view>
+          <view class='content-f-t'>
+            <view class='cd cd-one'>{{assess_con.font}}</view>
+          </view>
+          <view class='bianhao'>
+            <text>订单编号:{{assess_con.number}}</text>
+          </view>
+          <view class='shou-b'>
+            <text class='time'>{{assess_con.time}}</text>
+            <text class='dd'>订单数量: {{assess_con.num}}</text>
+          </view>
+          <view class='assess' bindtap='addAssess'>
+            <view class='blue'>待评价</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 内容为空时 -->
+    <view class="kong {{kong == 1 ?'show' : 'none'}}">
+        <view class='kong_img'><image src='../../images/10.png'></image></view>
+        <view class='kong_font'>还没有任何订单呢</view>
+    </view>
+  </view>
+</view>

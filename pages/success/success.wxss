@@ -1,0 +1,12 @@
+/* pages/success/success.wxss */
+view{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 283rpx auto;
+}
+.iconfont{
+  font-size: 100rpx;
+  color: rgba(95,163,239,1);
+  padding-bottom: 27rpx;
+}

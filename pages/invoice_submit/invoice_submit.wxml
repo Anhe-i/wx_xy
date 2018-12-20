@@ -1,0 +1,7 @@
+<!--pages/invoice_submit/invoice_submit.wxml-->
+<!--pages/success/success.wxml-->
+<view>
+  <text class='iconfont icon-duihao'>  </text>
+  <text class='success'>提交申请已成功</text>
+</view>
+

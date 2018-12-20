@@ -1,0 +1,52 @@
+<view class='title'>
+  <view class='shopp'>购物车</view>
+  <view class='gl'>管理</view>
+</view>
+
+<view class='content'>
+  <scroll-view scroll-y class='scroll'>
+    <checkbox-group bindchange="checkboxChange">
+      <view class='list' wx:for="{{items}}" wx:key = "key">
+        <label class='ckeckbox'>
+          <view class='y'>
+            <checkbox value='{{item.name}}' checked='{{item.selected}}' bindtap='checked' data-id='{{item.name}}'></checkbox>
+          </view>
+        </label>
+        <view class='img'>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view class='font'>
+          <view class='font-1'>{{item.content}}</view>
+          <view class='font-2'>{{item.list}}</view>
+          <view class='font-3'>
+            <view>￥ {{item.money}}</view>
+            <view>
+              <text class='iconfont icon-jiajian2 icon' bindtap='minus' data-id='{{item.name}}'></text>
+              <text>{{item.num}}</text>
+              <text class='iconfont icon-jiajian5 icon' bindtap='add' data-id='{{item.name}}'></text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </checkbox-group>
+
+  </scroll-view>
+
+  <view class='nav'>
+    <checkbox-group>
+      <label>
+        <view class='qx'>
+          <checkbox bindtap='selectAll' checked='{{select}}' data-id='{{}}'>全选</checkbox>
+        </view>
+      </label>
+    </checkbox-group>
+    <view class='js'>
+      <view>合计:
+        <text>￥{{price}}</text>
+      </view>
+      <view class='js-2'>结算({{sum}})</view>
+    </view>
+
+  </view>
+</view>

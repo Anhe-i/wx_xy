@@ -1,0 +1,34 @@
+<!--pages/refund/refund.wxml-->
+<view class='refund'>
+ <form bindsubmit='formSubmit'>
+   <view class='refund-top'>
+     <text>个人信息</text>
+   </view>
+   <view class='refund-con'>
+     <view>
+        <text>姓名：</text>
+        <input type='text' placeholder='填写' placeholder-class='refund-con-pla' name="userName"></input>
+     </view>
+      <view>
+        <text>号码：</text>
+        <input type='number' placeholder='填写' placeholder-class='refund-con-pla' name="userPhone"></input>
+     </view>
+      <view>
+        <text>地址：</text>
+        <input type='text' placeholder='填写' placeholder-class='refund-con-pla' name="userAddress"></input>
+     </view>
+      <view>
+        <text>合同单号：</text>
+        <input type='text' placeholder='填写' placeholder-class='refund-con-pla' name="contractNumber"></input>
+     </view>
+      <view>
+        <text>身份证号：</text>
+        <input type='idcard' placeholder='填写' placeholder-class='refund-con-pla'   name="userId"></input>
+     </view>
+   </view>
+   <view class='refund-btn'>
+   <!-- bindtap='refundSuccess'  -->
+     <button form-type="submit">申请退款</button>
+   </view>
+   </form>
+</view>

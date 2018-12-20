@@ -1,0 +1,30 @@
+<!--pages/waiting/waiting.wxml-->
+<view class='waiting'>
+   <view class='waiting-top'>
+      <view>
+        <text class='iconfont icon-ditu-yuan:before'></text>
+        <text class='waiting-top-normal'>发起提现申请</text>
+      </view>
+      <view>
+        <text class='iconfont icon-hourglass:before'></text>
+        <text class='waiting-top-active'>等待审核中</text>
+      </view>
+       <view>
+        <text class='iconfont icon-ditu-yuan:before'></text>
+        <text class='waiting-top-normal'>提现成功</text>
+      </view>
+   </view>
+   <view class='waiting-con'>
+      <view>
+         <text>提现金额</text>
+         <text>¥ 0.01</text>
+      </view>
+      <view>
+        <text>到账账户</text>
+        <text>张大大 (15292192811)</text>
+      </view>
+   </view>
+   <view class='waiting-btn'>
+     <button bindtap='withSuccess'>完成</button>
+   </view>
+</view>

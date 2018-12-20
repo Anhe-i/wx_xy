@@ -1,0 +1,6 @@
+/* pages/contact/contact.wxss */
+.contact{
+  padding: 60rpx;
+  color: #666666;
+  font-size: 34rpx;
+}

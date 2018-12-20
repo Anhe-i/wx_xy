@@ -1,0 +1,13 @@
+<!--pages/question/question.wxml-->
+<view class='question'>
+  <view>
+   <text>热点问题</text>
+  </view>
+  <view>
+      <view wx:for="{{7}}" wx:key="{{index}}" bindtap='questionDetail'>
+        <text>怎么进行押金退款?</text>
+        <text class='iconfont icon-gengduo:before'></text>
+      </view>
+      
+  </view>
+</view>

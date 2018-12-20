@@ -1,0 +1,5 @@
+<!--pages/success/success.wxml-->
+<view>
+  <text class='iconfont icon-duihao'>  </text>
+  <text class='success'>评价成功</text>
+</view>

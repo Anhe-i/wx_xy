@@ -1,0 +1,115 @@
+<!--pages/index/index.wxml-->
+<view class='contain'>
+  <view class='box1'>
+    <image src='{{beizi}}'></image>
+    <view class='content'>
+      <view>{{ddbh}}{{ddbh_1}}</view>
+      <view>{{kpje}}{{kpje_1}}</view>
+    </view>
+  </view>
+  <view class='box1 b_2'>
+    <view class='invoice'>
+      <view class="invoice box_1" bindtap="serviceSelection1">
+        <text class=" {{staus == 0?'is_checked':''}}">电子发票</text>
+      </view>
+      <view class='invoice box_1' bindtap="serviceSelection2">
+        <text class=" {{staus == 1?'is_checked':''}}">纸质发票</text>
+      </view>
+    </view>
+    <view class='invoice_text'>
+      <view>
+        <text>电子发票和纸质发票具有同等法律效力,可支持报销入账</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="box3">
+    <!-- {{isChecked4?'shou':'xian'}}  {{isChecked3?'xian':'bxian'}} -->
+
+
+
+    <view class='ttlx'>
+      <text>抬头类型</text>
+      <view class='ttlx_chc'>
+        <checkbox value='3' class="fd-r  " checked='{{isChecked3}}' bindtap="serviceSelection4">个人或事业单位</checkbox>
+        <checkbox value='3' class="fd-r  " checked='{{isChecked4}}' bindtap="serviceSelection3">企业</checkbox>
+      </view>
+    </view>
+
+    <view class="acontain {{isChecked3 == false?'none':'block'}}">
+      <view>
+        <text>发票抬头</text>
+        <view class='fptt'>
+          <view class="input">
+            <input placeholder="抬头名称" focus="{{focus}}" />
+            <text class='fptt_border'></text>
+            <text>选择</text>
+          </view>
+        </view>
+      </view>
+       <view class='mrtt_chc'>
+        <text>默认抬头</text>
+        <view class='checkbox'>
+          <checkbox value='3'></checkbox>
+        </view>
+      </view>
+
+     </view>
+
+
+
+    <view class="acontain {{isChecked4 == false?'none':'block'}}">
+      <view>
+        <text>发票抬头</text>
+        <view class='fptt'>
+          <view class="input">
+            <input placeholder="抬头名称" focus="{{focus}}" />
+            <text class='fptt_border'></text>
+            <text>选择</text>
+          </view>
+        </view>
+      </view>
+      <view class=''>
+        <text>税号</text>
+        <input placeholder="纳税人识别号" focus="{{focus}}" />
+      </view>
+      <view  class="{{status == 0 ?'show' : 'hidden'}}">
+        <text>开户银行</text>
+        <input placeholder="选填" focus="{{focus}}" />
+      </view>
+      <view class="{{status == 0 ?'show' : 'hidden'}}">
+        <text>银行账号</text>
+        <input placeholder="选填" focus="{{focus}}" />
+      </view>
+      <view  class="{{status == 0 ?'show' : 'hidden'}}">
+        <text>企业地址</text>
+        <input placeholder="选填" focus="{{focus}}" />
+      </view>
+      <view  class="{{status == 0 ?'show' : 'hidden'}}">
+        <text>企业电话</text>
+        <input placeholder="选填" focus="{{focus}}" />
+      </view>
+      <view class='mrtt_chc'>
+        <text>默认抬头</text>
+        <view class='checkbox'>
+          <checkbox value='3'></checkbox>
+        </view>
+      </view>
+
+
+
+
+
+      <view class='last' bindtap='serviceSelection5'>
+        <text class="iconfont {{status == 0 ?'icon-shang' : 'icon-shuangjiantou-copy-copy'}}"></text>
+      </view>
+    </view>
+  </view>
+
+  <view class='button'>
+    <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover">
+      提交申请
+    </button>
+  </view>
+  <view></view>
+</view>

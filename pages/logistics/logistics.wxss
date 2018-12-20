@@ -1,0 +1,123 @@
+/* pages/wuliu/wuliu.wxss */
+
+.contain {
+  width: 100%;
+  font-size: 30rpx;
+}
+
+.box1 {
+  height: 155rpx;
+  margin: 0rpx 20rpx;
+  display: flex;
+}
+
+.border {
+  border-bottom: 1rpx solid #77aff1;
+}
+
+.top1 {
+  width: 110rpx;
+  height: 110rpx;
+}
+
+.top2 {
+  width: 100%;
+  margin-left: 20rpx;
+}
+
+.top2_1 {
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.yifahuo {
+  float: right;
+  font-size: 35rpx;
+  color: #77aff1;
+  font-weight: bold;
+}
+
+.top1 image {
+  width: 110rpx;
+  height: 110rpx;
+  margin-top: 20rpx;
+}
+
+.box2 {
+  display: flex;
+  padding-top: 105rpx;
+  margin-left: 137rpx;
+  margin-right: 50rpx;
+}
+
+.top3 {
+  align-self: flex-end;
+}
+
+.content2 image {
+  width: 61rpx;
+  height: 814rpx;
+}
+
+.content1 {
+  position:absolute;
+  height:808rpx;
+}
+
+.content1 .content1_line {
+  margin-bottom: 47rpx;
+  font-size: 23rpx;
+  margin-top: 0rpx;
+  width: 178rpx;
+  display: flex;
+}
+
+.content1 .content1_line .text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 23rpx;
+}
+
+.content1_line image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.content3 {
+  border-left: 1rpx solid #999;
+  margin-left: 112rpx;
+  height: 812rpx;
+}
+
+.box2 .content3 .bottom{
+  margin-bottom: 1rpx;
+}
+
+
+.content3 .content3_line {
+  display: flex;
+  margin-left: 53rpx;
+  flex-direction: column;
+  margin-bottom: 47rpx;
+  font-size: 23rpx;
+  margin-top: 0rpx;
+  width: 420rpx;
+}
+
+.content3 .blue {
+  color: #5fa3ef;
+}
+
+.content3 .text{
+  margin-left: 10rpx;
+}
+
+.chuangdan {
+  font-weight: bold;
+}
+
+.chuangdanx3 {
+  font-size: 27rpx;
+  color: #999;
+  font-weight: bold;
+}

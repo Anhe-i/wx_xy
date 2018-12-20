@@ -1,0 +1,18 @@
+<!--pages/assess/assess.wxml-->
+<view class='content'>
+  <view class='img'><image src='../../images/8.png'></image></view>
+  <view >
+    <view class='title'>床单被罩</view>
+    <view class='font'>床单被罩床单被罩床单被罩</view>
+  </view>
+</view>
+<view class='submit'>
+  <input placeholder='亲, 请您对本次购物进行评价'></input>
+  <view class='add'>
+    <text class='iconfont icon-hao'></text>
+    <text>添加图片</text>
+  </view>
+</view>
+<view class='assess' bindtap='addSuccess'>
+  发表评价
+</view>

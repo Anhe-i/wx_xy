@@ -1,0 +1,15 @@
+<!--pages/display/display.wxml-->
+<view class='list-nav' wx:for='{{items}}' wx:key = "key" bindtap='display'>
+  <view>
+    <view>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view>
+      <view class='list-t'>{{item.list}}</view>
+      <view class='list-b'>
+        <text class='list-b-l'>{{item.time}}</text>
+        <text class='list-b-r'>￥ {{item.price}}</text>
+      </view>
+    </view>
+  </view>
+</view>

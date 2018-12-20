@@ -1,0 +1,11 @@
+<!--pages/myCode/myCode.wxml-->
+<view class='myCode'>
+    <view>
+       <image src='/images/erweima.png'></image>
+       <text>我的专属二维码</text>
+    </view>  
+     <view>
+       <image src='/images/erweima.png'></image>
+       <text>小程序</text>
+    </view>  
+</view>

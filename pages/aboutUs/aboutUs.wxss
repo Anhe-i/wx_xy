@@ -1,0 +1,26 @@
+/* pages/aboutUs/aboutUs.wxss */
+
+.aboutUs {
+  height: 100vh;
+  background: rgba(246, 246, 246, 1);
+  padding: 0rpx 25rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+}
+
+.about-con>view:nth-child(1), .about-statement>view:nth-child(1) {
+  text-align: center;
+  font-size: 30rpx;
+  color: rgba(102, 102, 102, 1);
+  padding: 25rpx 0rpx;
+}
+
+.about-con>view:nth-child(2), .about-statement>view:nth-child(2) {
+  font-size: 26rpx;
+  color: rgba(153, 153, 153, 1);
+  line-height: 36rpx;
+  text-indent: 1.5rem;
+}
+.about-statement{
+  margin-top:95rpx;
+}

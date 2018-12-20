@@ -1,0 +1,133 @@
+/* pages/shopping/shopping.wxss */
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 33rpx;
+}
+.shopp {
+  color: #616161;
+  font-size: 38rpx;
+}
+
+.gl {
+  color: #5fa3ef;
+  font-size: 36rpx;
+}
+
+.content {
+  width: 682rpx;
+  height: 880rpx;
+  margin: 0 auto;
+  box-shadow: 0px 14rpx 29rpx 0px rgba(16, 39, 75, 0.44);
+  border-radius: 14px;
+  /* position: relative; */
+}
+.scroll{
+  height: 790rpx;
+}
+.list{
+  width: 100%;
+  height: 180rpx;
+  border-bottom: 2rpx solid rgba(242,242,242,1);
+  display: flex;
+  justify-content: flex-start;
+}
+.y{
+  line-height: 180rpx;
+  text-align: center;
+}
+/* 复选按钮  选中前样式 */
+.y checkbox .wx-checkbox-input,
+.qx checkbox .wx-checkbox-input{
+  transform:scale(0.7);
+  border-radius: 50%;
+}
+/* 选中后样式 */
+.y checkbox .wx-checkbox-input.wx-checkbox-input-checked,
+.qx checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  background-color: #5FA3EF;
+}
+/* 选中后  对勾样式 */
+.y checkbox .wx-checkbox-input.wx-checkbox-input-checked::before,
+.qx checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  color:#fff;
+}
+.img{
+  margin-top: 37rpx;
+  margin-right: 33rpx;
+}
+.img image{
+  width: 124rpx;
+  height: 125rpx;
+}
+.font{
+  margin: 32rpx 24rpx 0 0;
+  width: 459rpx;
+}
+.font-1{
+  color: #616161;
+  font-size: 32rpx;
+}
+.font-2{
+  margin-top: 6rpx;
+  color: #999999;
+  font-size: 24rpx;
+}
+.font-3{
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #5FA3EF;
+  
+}
+.font-3 text{
+  font-size: 36rpx;
+  margin-right: 6rpx;
+}
+.font .icon{
+  border-radius: 50%;
+  background-color: rgba(224,224,224,1);
+  color: #fff;
+}
+.nav{
+  width: 682rpx;
+  height: 87rpx;
+  border-top: 1px solid rgba(95,163,239,1);
+  /* position: absolute;
+  bottom: 0; */
+   display: flex;
+  justify-content: space-between;
+}
+.qx{
+  width: 170rpx;
+  height: 87rpx;
+  text-align: center;
+  line-height: 86rpx;
+  color: #616161;
+  font-size: 32rpx;
+}
+.qx radio{
+  transform:scale(0.7);
+}
+.js{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 32rpx;
+  margin-right: 18rpx;
+  line-height: 87rpx;
+}
+.js view text{
+  color: #5FA3EF;
+}
+.js .js-2{
+  color: #fff;
+  width: 156rpx;
+  height: 49rpx;
+  text-align: center;
+  background:rgba(95,163,239,1);
+  border-radius:5px;
+  margin-top: 20rpx;
+  line-height: 49rpx;
+  margin-left: 12rpx;
+}

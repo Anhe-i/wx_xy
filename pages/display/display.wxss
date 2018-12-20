@@ -1,0 +1,30 @@
+/* pages/display/display.wxss */
+.list-nav{
+  width: 682rpx;
+  height: 454rpx;
+  margin: 0 auto;
+  box-shadow:0rpx 13rpx 26rpx 0rpx rgba(16,39,75,0.36);
+  border-radius: 12rpx;
+  margin-bottom: 57rpx;
+}
+.list-nav image{
+  width: 680rpx;
+  height: 366rpx;
+}
+.list-t{
+  font-size: 28rpx;
+  color: #999;
+  padding-left: 20rpx;
+}
+.list-b-l{
+   font-size: 28rpx;
+  color: #C2C2C2;
+  float: left;
+  padding-left: 20rpx;
+}
+.list-b-r{
+  font-size: 32rpx;
+  color: #5FA3EF;
+  float: right;
+  padding-right: 20rpx;
+}

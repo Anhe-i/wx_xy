@@ -1,0 +1,13 @@
+<!--pages/myDeposit/myDeposit.wxml-->
+<view class='myDeposit'>
+   <view class='md'>
+       <view>
+          <text>我的押金</text>
+          <text>200元</text>
+       </view>
+       <view bindtap='refund'>
+          <text>押金申退</text>
+          <text class='iconfont icon-gengduo:before'></text>
+       </view>
+   </view>
+</view>

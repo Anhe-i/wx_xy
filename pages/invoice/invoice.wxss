@@ -1,0 +1,191 @@
+/* pages/index/index.wxss */
+
+.contain {
+  position: relative;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding-bottom: 20rpx;
+  height: 1186rpx;
+  padding-top: 1rpx;
+}
+
+.box1 {
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 142rpx;
+  display: flex;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+
+.box1 image {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx 20rpx;
+}
+
+.content {
+  margin-top: 39rpx;
+  margin-bottom: 31rpx;
+}
+
+.content view {
+  font-size: 30rpx;
+  line-height: 28rpx;
+  margin-left: 22rpx;
+  color: #000;
+}
+
+.content :last-child {
+  margin-top: 16rpx;
+}
+
+.contain .b_2 {
+  display: flex;
+  font-size: 20rpx;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.invoice .box_1  .is_checked {
+  color: #60a4ef;
+  border: 1rpx solid #60a4ef;
+}
+
+.invoice {
+  width: 100%;
+  display: flex;
+  align-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+.b_2 .invoice_text text {
+  text-align: center;
+  font-size: 28rpx;
+  color: #bebebe;
+}
+
+.invoice .box_1 text {
+  height: 47rpx;
+  border-radius: 30rpx;
+  border: 1rpx solid #333;
+  font-size: 32rpx;
+  padding: 0rpx 23rpx;
+  line-height: 45rpx;
+  color: #000;
+}
+
+.box3 {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.xian {
+  display: block;
+}
+
+/* 复选按钮  选中前样式 */
+
+.ttlx checkbox .wx-checkbox-input, .mrtt_chc checkbox .wx-checkbox-input {
+  transform: scale(0.7);
+  border-radius: 50%;
+}
+
+/* 选中后样式 */
+
+.ttlx checkbox .wx-checkbox-input.wx-checkbox-input-checked,
+.mrtt_chc checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background-color: #5fa3ef;
+}
+
+/* 选中后  对勾样式 */
+
+.ttlx checkbox .wx-checkbox-input.wx-checkbox-input-checked::before,
+.mrtt_chc checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  color: #fff;
+}
+
+/* 选中后  对勾样式 */
+
+.foot_1 checkbox .wx-checkbox-input.wx-checkbox-input-checked::before,
+.mrtt_chc checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  color: #fff;
+}
+
+.ttlx {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 15rpx;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60rpx;
+}
+
+.ttlx_chc {
+  width: 386rpx;
+}
+
+.acontain {
+  width: 95%;
+  font-size: 30rpx;
+  margin: 0rpx 20rpx;
+}
+
+.contain .box3 .acontain .last {
+  display: flex;
+  justify-content: center;
+}
+
+.contain .box3 .acontain view {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50rpx;
+}
+
+.contain .box3 .acontain view :nth-child(2) {
+  text-align: right;
+}
+
+.mrtt_chc .checkbox {
+  width: 50rpx;
+}
+
+.fptt_border {
+  border-left: 4rpx solid #333;
+  line-height: 38px;
+  margin: 15rpx 10rpx;
+}
+
+.button{
+  margin: 20rpx 20rpx;
+  position: absolute;
+  width: 95%;
+  bottom: 100rpx;
+}
+.button button{
+  background-color: #5FA3EF;
+  color: #fff;
+  border-radius: 60rpx;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+.contain .box3 .acontain .show{
+  display: flex;
+}
+.contain .box3 .acontain .hidden{
+  display: none;
+}

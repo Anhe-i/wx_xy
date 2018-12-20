@@ -1,0 +1,51 @@
+/* pages/address/address.wxss */
+
+.address {
+  background: rgba(246, 246, 246, 1);
+  height: 100vh;
+  padding-top:14rpx;
+  box-sizing: border-box;
+  font-family:MicrosoftYaHei;
+  font-weight:400;
+}
+
+.address-list>view{
+  /* height:150rpx; */
+  background:#fff;
+  font-size:28rpx;
+  color:rgba(97,97,97,1);
+  padding:14rpx 20rpx;
+  margin-bottom:14rpx;
+}
+
+.address-list>view>view>text{
+  margin-right:12rpx;
+}
+.address-list>view>view:nth-child(2){
+  display: flex;
+  justify-content: flex-start;
+}
+.address-list>view>view:nth-child(2)>text:nth-child(1){
+  display: inline-block;
+  width:565rpx;
+  line-height:38rpx;
+}
+.address-list>view>view:nth-child(2)>text:nth-child(2){
+  font-size:44rpx;
+   
+}
+.address-list>view>view:nth-child(2)>text:nth-child(3){
+  color:#FF000C;
+}
+
+.address-add {
+  width: 750rpx;
+  height: 90rpx;
+  background: rgba(95, 163, 239, 1);
+  position: absolute;
+  bottom: 0rpx;
+  line-height:90rpx;
+  text-align: center;
+  font-size:34rpx;
+  color:rgba(255,255,255,1);
+}

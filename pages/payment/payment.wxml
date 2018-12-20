@@ -1,0 +1,51 @@
+<!--pages/payment/payment.wxml-->
+<view class='payment'>
+  <view class='wait'>等待买家付款</view>
+  <view class='countDown'>剩余
+  <text>{{hh}}</text>
+  <text>小时</text> 
+ <text>{{mm}}</text>
+  <text>分</text>自动关闭
+  </view>
+
+</view>
+
+<view class='position'>
+  <view class='iconfont icon-xingzhuangkaobei'></view> 
+  <view class='information'>
+    <view>张大大： 135554861577</view>
+    <view>河北省 唐山市 管城区 汤巷中心村1区1号楼</view>
+  </view>
+</view>
+
+<view class='list'> 
+    <view class='list-details'>
+      <view class='content-t'>
+        <view class='con-tent-img'>
+          <image src='{{obj.img}}'></image>
+        </view>
+        <view class='content-font'>
+          <view class='content-f-t'>
+            <view class='cd'>{{obj.title}}</view>
+            <view class='num'>￥ {{obj.price}}</view>
+          </view>
+          <view class='content-f-t'>
+            <view class='cd cd-one'>{{obj.font}}</view>
+          </view>
+          <view class='content-f-t'>
+            <view class='cd cd-one'>订单编号: {{obj.number}}</view>
+          </view>
+          <view class='content-b'>
+            <text class='time'>{{obj.time}}</text>
+            <text class='dd'>订单数量: {{obj.num}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>
+
+
+<view class='bottom'>
+  <view class='cancel' bindtap='showModal'>取消订单</view>
+  <view class='promptly'>立即付款</view>
+</view>

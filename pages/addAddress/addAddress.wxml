@@ -1,0 +1,35 @@
+<!--pages/addAddress/addAddress.wxml-->
+<view class='addAddress'>
+<form bindsubmit='addAddress'>
+  <text class='ad-tag'>收货人</text> 
+  <view class='addList'>
+    <view class='addList-one'>
+      <text>姓名:</text>
+     <input type='text' placeholder='真实姓名' placeholder-class='inp' name="userName"></input>
+    </view>
+    <view class='addList-one'>
+     <text>电话:</text>
+    <input type='number' placeholder='手机号码' placeholder-class='inp' name="phone"></input>
+    </view> 
+  </view>
+  <text class='ad-tag'>收货人</text>
+  <view class='addList'> 
+     <view class='addList-two'>
+       <text>收货地址:</text>
+       <picker mode="region" value='{{region}}' bindchange="bindRegionChange" class="{{status?'select-active':'select'}}" name="address" >  
+        {{region[0]}}/{{region[1]}}/{{region[2]}} </picker> 
+         
+
+          <text class='iconfont icon-coordinates:before'></text>
+     </view>
+     <view class='addList-two'>
+       <text>详细地址:</text> 
+       <input type='text' placeholder='街道门牌、楼层房间等信息' placeholder-class='inp' name="addressDetail"></input>
+     </view>
+    
+  </view>
+  <view class='addDizhi'>
+    <button form-type='submit'>新增收货地址</button>
+  </view>
+</form>
+</view>

@@ -1,0 +1,76 @@
+<!--pages/withdrawal/withdrawal.wxml-->
+<view class='withdrawal'>
+<form bindsubmit='withdrawal'>
+
+  <view class='wd-first'>
+    <text>提现至账户上</text>
+    <text>张大大 (15192192811)</text>
+    <text class='iconfont icon-gengduo:before '></text>
+  </view>
+ 
+  <view class='wd-second'>
+    <view>
+      <text>可用余额</text>
+      <text>30.2</text>
+    </view>
+    <view>
+      <view>
+        <text>提现金额</text>
+      </view>
+      <view>
+        <text>¥</text>
+        <input type='digit' placeholder='22.00' placeholder-class='wd-second-inp' name="cash"></input>
+      </view>
+      <view>
+        <text>余额大于</text>
+        <text>100</text>
+        <text>元可提现</text>
+        <text>全部提现</text>
+      </view>
+    </view>
+  </view>
+  <view class='wd-third'>
+    <button  form-type='submit'>提现</button>
+  </view>
+  <view class='wd-fourth'>
+    <view>
+      <view>
+        <text class='iconfont icon-ditu-yuan:before'></text>
+        <text>累计收入</text>
+      </view>
+      <view>
+        <text>1000.1</text>
+      </view>
+    </view>
+    <view>
+      <view>
+        <text class='iconfont icon-ditu-yuan:before'></text>
+        <text>购物已使用</text>
+      </view>
+      <view>
+        <text>1000.1</text>
+      </view>
+
+    </view>
+    <view>
+      <view>
+        <text class='iconfont icon-ditu-yuan:before'></text>
+        <text>已提现</text>
+      </view>
+      <view>
+        <text>1000.1</text>
+      </view>
+
+    </view>
+    <view>
+      <view>
+        <text class='iconfont icon-ditu-yuan:before'></text>
+        <text>可用余额</text>
+      </view>
+      <view>
+        <text>1000.1</text>
+      </view>
+    </view>
+  </view>
+  </form>
+</view>

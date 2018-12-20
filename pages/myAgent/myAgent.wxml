@@ -1,0 +1,13 @@
+<!--pages/myAgent/myAgent.wxml-->
+<view class='myAgent'>
+   <view wx:for="{{8}}" wx:key="{{index}}">
+     <view>
+        <text class='iconfont icon-guanyanren:before'></text>
+        <text>代理人：张大大</text>
+     </view>
+     <view>
+       <text class='iconfont icon-daifukuan:before'></text>
+       <text>贡献金额:60</text>
+     </view>
+   </view>
+</view>

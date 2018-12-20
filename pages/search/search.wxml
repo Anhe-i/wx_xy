@@ -1,0 +1,9 @@
+<!--pages/search/search.wxml-->
+<view class='search'>
+    <view class='search-top'>
+       <!-- <text></text> -->
+       <text class='iconfont icon-search:before'></text>
+       <input type='text' placeholder='搜索想要换洗的商品' placeholder-class='search-inp'></input>
+       <button bindtap='goods'>搜索</button>
+    </view>    
+</view>

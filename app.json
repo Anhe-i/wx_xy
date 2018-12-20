@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/invoice/invoice",
+    "pages/index/index",
+    "pages/list/list",
+    "pages/shopping/shopping",
+    "pages/details/details",
+    "pages/assess/assess",
+    "pages/success/success",
+    "pages/payment/payment",
+    "pages/search/search",
+    "pages/transfer_station/transfer_station",
+    "pages/goods/goods",
+    "pages/display/display",
+    "pages/invoice_submit/invoice_submit",
+    "pages/logistics/logistics",
+    "pages/myDeposit/myDeposit",
+    "pages/selfCenter/selfCenter",
+    "pages/incomeDetails/incomeDetails",
+    "pages/withdrawal/withdrawal",
+    "pages/waiting/waiting",
+    "pages/withSuccess/withSuccess",
+    "pages/withFail/withFail",
+    "pages/rebate/rebate",
+    "pages/myAgent/myAgent",
+    "pages/aboutUs/aboutUs",
+    "pages/myCode/myCode",
+    "pages/question/question",
+    "pages/refund/refund",
+    "pages/refundSuccess/refundSuccess",
+    "pages/address/address",
+    "pages/addAddress/addAddress",
+    "pages/editAddress/editAddress",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7A7A7A",
+    "selectedColor": "#5FA3EF",
+    "borderStyle": "rgba(184,184,184,1)",
+    "backgroundColor": "#fff",
+    "height": "120rpx",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/list1.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "iconPath": "images/shopping.png",
+        "selectedIconPath": "images/shopping1.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/selfCenter/selfCenter",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my1.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+<view class='title'>
+  <view class='title-l'>
+    <text class='iconfont icon-daohangdizhiweizhi'></text>
+    <text>贵阳市</text>
+  </view>
+
+  <view class='title-r' bindtap='click'>
+    <text class='iconfont .icon-daohang-shouqi'></text>
+  </view>
+  <view class='select' style='display:{{name}}'>
+    <view>关于我们</view>
+    <view>常见问题</view>
+    <view>联系客服</view>
+  </view>
+</view>
+
+<view class='search'>
+  <input placeholder='搜索想要换洗的商品' bindtap='addSearch'>
+  </input>
+  <text class='iconfont icon-search' style='color:#000;'></text>
+</view>
+
+<view class='price'>
+  <view class='money'>
+    <text class='iconfont icon-raogoujianxuanzhuan'></text>
+    <text>活动充值</text>
+  </view>
+  <view class='img'>
+      <image src='../../images/2.png'></image>
+  </view>
+</view>
+
+
+<view class='nav'>
+  <view wx:for="{{array}}" wx:for-item="array" wx:key = "key">
+    <image src='{{array.img}}'></image>
+    <view>{{array.nav}}</view>
+  </view>
+</view>
+
+<view class='list'>
+  <text class='iconfont icon-qiapianmoshi'></text>
+  <text>{{content}}</text>
+</view>
+
+
+<view class='list-nav' wx:for='{{items}}' wx:key = "key" >
+  <view>
+    <view>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view>
+      <view class='list-t'>{{item.list}}</view>
+      <view class='list-b'>
+        <text class='list-b-l'>{{item.time}}</text>
+        <text class='list-b-r'>￥ {{item.price}}</text>
+      </view>
+    </view>
+  </view>
+</view>

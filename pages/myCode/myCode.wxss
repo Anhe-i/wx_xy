@@ -1,0 +1,31 @@
+/* pages/myCode/myCode.wxss */
+
+.myCode {
+  text-align: center;
+  height: 100vh;
+  background: rgba(246, 246, 246, 1);
+  box-sizing: border-box;
+}
+
+.myCode image {
+  width: 265rpx;
+  height: 262rpx;
+}
+
+.myCode text {
+  margin-top: 40rpx;
+  display: block;
+  height: 30rpx;
+  font-size: 30rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(97, 97, 97, 1);
+}
+
+.myCode>view:nth-child(1) {
+  padding-top: 83rpx;
+}
+
+.myCode>view:nth-child(2) {
+  padding-top: 162rpx;
+}

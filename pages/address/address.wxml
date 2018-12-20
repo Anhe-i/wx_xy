@@ -1,0 +1,20 @@
+<!--pages/address/address.wxml-->
+<view class='address'>
+   <view class='address-list'>
+       <view wx:for="{{2}}" wx:key="{{index}}">
+          <view>
+            <text>176****5252</text>
+            <text>张大大</text>
+            <text>收</text>
+          </view>
+          <view>
+            <text>上海 浦东新区 周浦镇淮河路街道 上海 浦东新区周浦镇淮河路街道</text>
+            <text class='iconfont icon-pingjia:before' bindtap='editAddress'></text>
+            <text class='iconfont icon-xuanzhong:before' wx:if="{{isShow[index]}}"></text>
+          </view>
+       </view>
+   </view>
+   <view class='address-add'>
+     <text bindtap='addAddress'>新增收货地址</text>     
+   </view>
+</view>

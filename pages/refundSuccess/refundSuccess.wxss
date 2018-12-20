@@ -1,0 +1,25 @@
+/* pages/refundSuccess/refundSuccess.wxss */
+
+.refundSuccess {
+  text-align: center;
+  padding-top: 278rpx;
+}
+
+.refundSuccess text {
+  display: block;
+}
+
+.refundSuccess text:nth-child(1) {
+  font-size: 100rpx;
+  height: 100rpx;
+  margin-bottom: 22rpx;
+  color: rgba(95, 163, 239, 1);
+}
+
+.refundSuccess text:nth-child(2) {
+  height: 30rpx;
+  font-size: 30rpx;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+}

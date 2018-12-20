@@ -1,0 +1,6 @@
+<!--pages/refundSuccess/refundSuccess.wxml-->
+ <view class='refundSuccess'>
+
+      <text class='iconfont icon-roundcheckfill:before'></text>
+      <text>申请退款已提交成功</text>
+ </view>

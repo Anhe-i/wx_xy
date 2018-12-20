@@ -1,0 +1,12 @@
+<!--pages/withFail/withFail.wxml-->
+ <!--pages/withSuccess/withSuccess.wxml-->
+<view class='withFail'>
+    <view class='ws-top'>
+       <text class='iconfont icon-roundclosefill:before'></text>
+       <text>提现申请失败</text>
+       <text>原因： 由于未激活由于未激活等因素等</text>
+    </view>
+    <view class='ws-btn'>
+      <button>完成</button>
+    </view>
+</view>

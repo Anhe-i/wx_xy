@@ -1,0 +1,31 @@
+<!--pages/details/details.wxml-->
+ <view class='content'>
+   <view class='content-t'>
+    <view class='con-tent-img'>
+      <image src='{{obj.img}}'></image>
+    </view>
+    <view class='content-font'>
+      <view class='content-f-t'>
+        <view class='cd'>{{obj.title}}</view>
+        <view class='num'>￥ {{obj.price}}</view>
+      </view>
+      <view class='content-f-t'>
+        <view class='cd cd-one'>{{obj.font}}</view>
+      </view>
+      <view class='content-b'>
+        <text class='time'>{{obj.time}}</text>
+        <text class='dd'>订单数量: {{obj.num}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='details'>
+    <view>订单编号： {{obj.number}}</view>
+    <view>订单数量： {{obj.num}}</view>
+    <view>订单金额： {{obj.price}}元</view>
+    <view>完成时间： {{obj.time}}</view>
+  </view>
+  <view class='btn'>
+    <view class='assess' bindtap='addAssess'>去评价</view>
+    <view class='invoice' bindtap='addInvoice'>发票申请</view>
+  </view>
+ </view>

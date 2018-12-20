@@ -1,0 +1,11 @@
+<!--pages/withSuccess/withSuccess.wxml-->
+<view class='withSuccess'>
+    <view class='ws-top'>
+       <text class='iconfont icon-roundcheckfill:before'></text>
+       <text>提现申请已成功</text>
+       <text>已提交申请，5-7个工作日退回到银行卡</text>
+    </view>
+    <view class='ws-btn'>
+      <button bindtap='withFail'>完成</button>
+    </view>
+</view>

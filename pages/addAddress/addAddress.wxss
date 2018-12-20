@@ -1,0 +1,106 @@
+/* pages/addAddress/addAddress.wxss */
+
+.addAddress {
+  height: 100vh;
+  background: rgba(246, 246, 246, 1);
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  padding: 14rpx 21rpx 0rpx;
+  box-sizing: border-box;
+  position:relative;
+}
+/* 收货人标题 */
+.addAddress .ad-tag {
+  display: block;
+  height: 24rpx;
+  font-size: 24rpx;
+  color: rgba(153, 153, 153, 1);
+  margin-bottom:20rpx;
+}
+.addAddress .ad-tag:nth-of-type(2){
+  margin-top:14rpx;
+  
+}
+
+
+.addList {
+  background: #fff;
+  padding: 0rpx 18rpx 0rpx 25rpx;
+}
+
+.addList>view {
+  display: flex;
+  height:65rpx;
+  justify-items: center;
+  /* justify-content: space-between; */
+  line-height:65rpx;
+  font-size: 30rpx;
+  border-bottom:1rpx solid rgba(218,218,218,1);
+  position: relative;
+}
+.addList>view:last-child{
+  border-bottom:none;
+}
+.addList>view>text{
+  padding-right:14rpx;
+}
+ /* 收货人第二栏 */
+.addList .addList-two{
+   /* width: 130rpx; */
+   color: rgba(102, 102, 102, 1);
+}
+ 
+
+.addList .inp{
+    color:rgba(211,211,211,1);
+    text-align:left;
+    
+}
+.addList-one .inp{
+  padding-left:160rpx;
+}
+.addList-one input{
+  width:550rpx;
+}
+.addList-two .inp{
+  padding-left:90rpx;
+}
+.addList-two input{
+  width:500rpx;
+}
+.addList-two .select{
+    color:rgba(211,211,211,1);
+    padding-left:90rpx;
+    width:400rpx;
+}
+.addList-two .select-active{
+  color: rgba(102, 102, 102, 1);
+  padding-left:0rpx;
+}
+/* 输入框、选择器统一样式 */
+.addList>view>input,.addList>view>picker{   
+   line-height:65rpx;
+   text-align:left;
+   height:65rpx;
+}
+
+.addList .iconfont{
+  position:absolute;
+  right:0rpx;
+  font-size:32rpx;
+  color:rgba(95,163,239,1);
+}
+.addDizhi{
+  position:fixed;
+  bottom:0rpx;
+  height:90rpx;
+  left:-20rpx;
+  right:-20rpx;
+
+}
+.addDizhi button{
+ background:rgba(95,163,239,1);
+ font-size:36rpx;
+ color:rgba(255,255,255,1);
+ line-height:90rpx;
+}

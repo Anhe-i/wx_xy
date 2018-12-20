@@ -1,0 +1,52 @@
+/* pages/zhongZhuan/zhongZhuan.wxss */
+
+.contain {
+  width: 100%;
+}
+
+.content1 {
+  margin: 0 auto;
+  width: 365px;
+  height: 250rpx;
+  position: relative;
+  margin-bottom: 30rpx;
+}
+
+.contain .image {
+  width: 726rpx;
+  height: 241rpx;
+}
+
+.box {
+  position: absolute;
+  width: 560rpx;
+  height: 180rpx;
+  top: 24rpx;
+  left: 74rpx;
+}
+
+.content1 .box .title_2 .image, .content1 .box .title_3 .image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.content1 .box .title_2 .image{
+  margin-top: 8rpx;
+}
+
+.box .title_2 {
+  margin-top: 20rpx;
+}
+
+.title_1 .hair {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.title_2 .hair,.title_3 .hair{
+  font-size: 29rpx;
+  color: #949494;
+  margin-left: 13rpx;
+  vertical-align: middle;
+}
