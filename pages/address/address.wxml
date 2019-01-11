@@ -1,16 +1,16 @@
 <!--pages/address/address.wxml-->
 <view class='address'>
    <view class='address-list'>
-       <view wx:for="{{2}}" wx:key="{{index}}">
+       <view wx:for="{{address}}" wx:key="{{index}}" data-addressId='{{item.id}}' bindtap='addressClick'>
           <view>
-            <text>176****5252</text>
-            <text>张大大</text>
+            <text>{{item.telephone}}</text>
+            <text>{{item.receivername}}</text>
             <text>收</text>
           </view>
           <view>
-            <text>上海 浦东新区 周浦镇淮河路街道 上海 浦东新区周浦镇淮河路街道</text>
-            <text class='iconfont icon-pingjia:before' bindtap='editAddress'></text>
-            <text class='iconfont icon-xuanzhong:before' wx:if="{{isShow[index]}}"></text>
+            <text>{{item.address}}{{item.addressdetails}}</text>
+            <text class='iconfont icon-pingjia:before' data-addressData="{{item}}" catchtap='editAddress'></text>
+            <text class='iconfont icon-xuanzhong:before' wx:if="{{addressActive==item.id}}"></text>
           </view>
        </view>
    </view>

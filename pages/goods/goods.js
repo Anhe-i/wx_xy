@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    deposit:'100',
     imgUrl: [
       { url: '../../images/goods.jpeg' },
       { url: '../../images/goods1.jpeg' },

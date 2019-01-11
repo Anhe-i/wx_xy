@@ -1,0 +1,16 @@
+<!--pages/homepage/homepage.wxml-->
+<view class='all'>
+  <view class='big'>
+    <view class='select'>
+      <view class='picture' bindtap='addIndex'>
+        <image src='/images/78.jpg'></image>
+        <view class='wash'>洗衣</view>
+      </view>
+      <view class='picture_1' bindtap='addIndex1'>
+        <image src='/images/79.jpg'></image>
+        <view class='rent'>租押</view>
+      </view>
+    </view>
+    <view class='come'>立即进入</view>
+  </view>
+</view>

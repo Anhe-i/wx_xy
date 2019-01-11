@@ -12,6 +12,7 @@
       <view class='content-f-t'>
         <view class='cd cd-one'>{{obj.font}}</view>
       </view>
+      <view class='deposit'>押金:{{deposit}}元</view>
       <view class='content-b'>
         <text class='time'>{{obj.time}}</text>
         <text class='dd'>订单数量: {{obj.num}}</text>

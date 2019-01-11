@@ -93,7 +93,7 @@
   left:-20rpx;
   right:-20rpx;
   display: flex;
- 
+  border-radius: 
 
 }
 .addDizhi .del,.addDizhi .save{
@@ -113,6 +113,11 @@
   background:rgba(225,225,225,1);
   color:rgba(255,52,52,1);
 }
+.addDizhi button{
+  border-radius:0;
+
+}
+
 .addDizhi button:after {
   border: none;
   

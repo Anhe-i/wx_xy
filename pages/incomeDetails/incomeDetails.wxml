@@ -9,33 +9,33 @@
     </view>
   </view>
   <view class="{{status==0?'income-list':'income-list-none'}}">
-     <view wx:for="{{8}}" wx:key="{{index}}">
+     <view wx:for="{{earn}}" wx:key="{{index}}">
          <view>
           <text class='iconfont icon-mine:before'></text> 
-          <text>张大大</text>
+          <text>{{item.username}}</text>
          </view>
          <view>
            <text>贡献金额:</text>
-           <text>60</text>
+           <text>{{item.money}}</text>
          </view>
          <view>
-           <text>2018年-12-02</text>
+           <text>{{item.createtime}}</text>
          </view>
      </view>
   </view>
   <view class="{{status==1?'spend-list':'income-list-none'}}">
-      <view wx:for="{{6}}" wx:key="{{index}}">
+      <view wx:for="{{expenditure}}" wx:key="{{index}}">
          <view>
            <text>订单号：</text>
-           <text>10198162514</text>
+           <text>{{item.orderno}}</text>
          </view>
          <view>
           <text>订单日期：</text>
-          <text>2018-12-02</text>
+          <text>{{item.createtime}}</text>
          </view>
          <view>
            <text>订单金额：</text>
-           <text>200元</text>
+           <text>{{item.money}}</text>
          </view>
       </view>
   </view>

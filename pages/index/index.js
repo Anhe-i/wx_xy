@@ -23,12 +23,14 @@ Page({
       img: '../../images/6.png',
       list: '酒店毛巾20条',
       time: '2018-12-3',
-      price: '80'
+      price: '80',
+      deposit: '押金:￥100'
     }, {
       img: '../../images/7.png',
       list: '床单被罩',
       time: '2018-12-3',
-      price: '120'
+      price: '120',
+      deposit: '押金:￥100'
     },
     ]
   },
@@ -48,6 +50,16 @@ Page({
       url: '../../pages/search/search',
     })
   },
+  addGoods(){
+    wx.navigateTo({
+      url: '../../pages/goods/goods',
+    })
+  },
+  addZhong(){
+    wx.navigateTo({
+      url: '../../pages/transfer_station/transfer_station',
+    })
+  },
 
   //事件处理函数
   bindViewTap: function() {
@@ -58,7 +70,19 @@ Page({
     wx.stopPullDownRefresh()
   },
   onLoad: function() {
-
+    wx.request({
+      url: app.globalData.path+'selectAllGoods',
+      data: '',
+      header: {},
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: function(res) {
+        console.log(res)
+      },
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   },
   getUserInfo: function(e) {}
 })

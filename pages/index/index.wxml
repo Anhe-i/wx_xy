@@ -15,8 +15,9 @@
 </view>
 
 <view class='search'>
-  <input placeholder='搜索想要换洗的商品' bindtap='addSearch'>
-  </input>
+  <view bindtap='addSearch'>
+  搜索要换洗的衣服
+  </view>
   <text class='iconfont icon-search' style='color:#000;'></text>
 </view>
 
@@ -32,19 +33,19 @@
 
 
 <view class='nav'>
-  <view wx:for="{{array}}" wx:for-item="array" wx:key = "key">
+  <view wx:for="{{array}}" wx:for-item="array" wx:key = "key" bindtap='addZhong'>
     <image src='{{array.img}}'></image>
     <view>{{array.nav}}</view>
   </view>
 </view>
 
 <view class='list'>
-  <text class='iconfont icon-qiapianmoshi'></text>
+  <text class='iconfont icon-caidan'></text>
   <text>{{content}}</text>
 </view>
 
 
-<view class='list-nav' wx:for='{{items}}' wx:key = "key" >
+<view class='list-nav' wx:for='{{items}}' wx:key = "key" bindtap='addGoods'>
   <view>
     <view>
       <image src='{{item.img}}'></image>
@@ -53,6 +54,7 @@
       <view class='list-t'>{{item.list}}</view>
       <view class='list-b'>
         <text class='list-b-l'>{{item.time}}</text>
+        <text class='list-b-r'>{{item.deposit}}</text>
         <text class='list-b-r'>￥ {{item.price}}</text>
       </view>
     </view>

@@ -95,6 +95,9 @@
   border-radius: 50%;
 }
 
+.goods-list-one>view:nth-child(3)>view:nth-child(2) {
+  margin-top: 28rpx;
+} 
  
 .goods-list-two>view {
   height: 84rpx;
@@ -124,4 +127,10 @@
   font-size:26rpx;
   font-weight:bold;
   color:rgba(255,255,255,1);
+}
+
+.deposit{
+  font-size:26rpx;
+  font-weight:bold;
+  color: #D3D3D3;
 }

@@ -5,6 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
+    //  商品
+    casArray: ['商品1', '商品2', '商品3', '商品4', '商品5'],
+    casIndex: 0,
+
+    // 类名
+    spActive:true
+  },
+
+  spName: function (e) {
+    
+    this.setData({
+      casIndex: e.detail.value,
+      spActive:false
+    })
 
   },
 

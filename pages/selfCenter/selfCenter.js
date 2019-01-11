@@ -1,4 +1,5 @@
 // pages/selfCenter/selfCenter.js
+var app=getApp();
 Page({
 
   /**
@@ -6,6 +7,31 @@ Page({
    */
   data: {
 
+  },
+  //页面加载执行
+  onLoad: function (options) {
+    var that=this;
+    wx.request({
+      url: app.globalData.path+'peopleCenter',
+      data: {
+        openid:app.globalData.openid
+      },
+      header: {},
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: function(res) {
+        console.log(res)
+        if(res.data.code==1){
+          that.setData({
+            userData: res.data.data
+          })
+        }
+        
+      },
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   },
   myDeposit(){
     wx.navigateTo({
@@ -18,7 +44,6 @@ Page({
       url: '../../pages/address/address',
     })
   },
-
   // 收入明细
   incomeDetails() {
     wx.navigateTo({

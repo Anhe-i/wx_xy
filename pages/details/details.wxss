@@ -89,3 +89,9 @@
   width: 180rpx;
   height: 52rpx;
 }
+
+.deposit{
+  padding-left:53rpx;
+  color:#616161;
+  font-size:24rpx;
+}

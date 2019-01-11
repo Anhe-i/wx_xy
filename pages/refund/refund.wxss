@@ -31,7 +31,13 @@
 .refund-con>view>text {
   width: 140rpx;
 }
-
+.refund-con>view>picker{
+  width:450rpx;
+  text-align: center;
+}
+.refund-con>view .spActive{
+  color: rgba(209, 209, 209, 1);
+}
 .refund-con>view input {
   text-align: center;
   width: 450rpx;

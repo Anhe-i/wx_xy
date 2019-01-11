@@ -1,74 +1,74 @@
 <!--pages/selfCenter/selfCenter.wxml-->
 <view class='selfCenter'>
-   <view class='sc-top'>
-      <view>
-         <view>
-           <image src='/images/userIcon.jpeg'></image>
-         </view>
-         <view>
-           <text>张大大</text>
-           <text class='iconfont icon-male:before'></text>
-         </view>
-         
+  <view class='sc-top'>
+    <view>
+      <view class='user'>
+        <open-data type="userAvatarUrl"></open-data>
       </view>
       <view>
-         <view bindtap='myDeposit'>
-           <text class='iconfont icon-jifen:before'></text>
-           <text>我的押金</text> 
-         </view>
-         <view>
-           <text class='canUse'>00.00</text>
-           <text>可用金额</text>  
-         </view>
-         <view bindtap='address'>
-           <text class='iconfont icon-dangdi:before'></text>
-           <text>地址管理</text>  
-         </view>
+        <open-data type="userNickName"></open-data>
+        <text class='iconfont icon-male:before'></text>
       </view>
-   </view>
-   <view class='sc-con'>
-     <view class='sc-con-box'>
-       <view bindtap='incomeDetails'>
-          <text>收入明细</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-        <view bindtap='withdrawal'>
-          <text>提现</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-        <view bindtap='rebate'>
-          <text>返利制度</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-        <view bindtap='aboutUs'>
-          <text>关于我们</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-        <view bindtap='myAgent'>
-          <text>我的会员</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-        <view>
-          <text>我的银行卡</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-        <view bindtap='contact'>
-          <text>联系客服</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-        <view bindtap='question'>
-          <text>常见问题</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-        <view>
-          <text>我的合同</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-        <view bindtap='myCode'>
-          <text>我的二维码</text>
-          <text class='iconfont icon-jiantouyou:before'></text>
-       </view>
-     </view>
-   </view>
-</view>
 
+    </view>
+    <view>
+      <view bindtap='myDeposit'>
+        <text class=''>{{userData.cash}}</text>
+        <text>我的押金</text>
+      </view>
+      <view>
+        <text class='canUse'>{{userData.realmoney}}</text>
+        <text>可用金额</text>
+      </view>
+      <view bindtap='address'>
+        <text class='iconfont icon-dangdi:before'></text>
+        <text>地址管理</text>
+      </view>
+    </view>
+  </view>
+  <view class='sc-con'>
+    <view class='sc-con-box'>
+      <view bindtap='incomeDetails'>
+        <text>收入明细</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+      <view bindtap='withdrawal'>
+        <text>提现</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+      <view bindtap='rebate'>
+        <text>返利制度</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+      <view bindtap='aboutUs'>
+        <text>关于我们</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+      <view bindtap='myAgent'>
+        <text>我的会员</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+      <view>
+        <text>我的银行卡</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+      <view bindtap='contact'>
+        <text>联系客服</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+      <view bindtap='question'>
+        <text>常见问题</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+      <view>
+        <text>我的合同</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+      <view bindtap='myCode'>
+        <text>我的二维码</text>
+        <text class='iconfont icon-jiantouyou:before'></text>
+      </view>
+
+    </view>
+  </view>
+</view>

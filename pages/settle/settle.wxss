@@ -1,0 +1,25 @@
+/* pages/settle/settle.wxss */
+.message{
+  width: 682rpx;
+  height: 300rpx;
+  margin: 0 auto;
+}
+.message image{
+  width: 682rpx;
+  height: 300rpx;
+  position: absolute;
+  z-index: -1;
+}
+.message-person{
+  padding-top: 40rpx;
+  padding-left: 53rpx;
+  padding-right: 45rpx;
+  font-size: 28rpx;
+  display: flex;
+  color: #4E4E4E;
+  justify-content: space-between;
+}
+.address{
+  font-size: 26rpx;
+  
+}

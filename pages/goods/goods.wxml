@@ -22,6 +22,7 @@
       </view>
       <view>
         <view>
+          <view class='deposit'>押金:{{deposit}}元</view>
           <text>¥ 168</text>
         </view>
         <view>
@@ -29,8 +30,8 @@
           <text>1</text>
           <text class='iconfont icon-tianjia:before'></text>
         </view>
-      </view>
 
+      </view>
     </view>
     <view class='goods-list-two'>
       <view>

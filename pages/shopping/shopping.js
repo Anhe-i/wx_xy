@@ -10,6 +10,7 @@ Page({
         img: '../../images/9.png',
         content: '床单被罩',
         list: '床单被罩床单被罩床单被罩',
+        deposit:'10',
         money: '120',
       selected: false,
         num: "1"
@@ -19,6 +20,7 @@ Page({
         img: '../../images/9.png',
         content: '床单被罩',
         list: '床单被罩床单被罩床单被罩',
+        deposit: '10',
         money: '110',
         selected: false,
         num: "1"
@@ -28,6 +30,7 @@ Page({
         img: '../../images/9.png',
         content: '床单被罩',
         list: '床单被罩床单被罩床单被罩',
+        deposit: '10',
         money: '100',
         selected: false,
         num: "1"
@@ -37,6 +40,7 @@ Page({
         img: '../../images/9.png',
         content: '床单被罩',
         list: '床单被罩床单被罩床单被罩',
+        deposit: '10',
         money: '80',
         selected: false,
         num: "1"
@@ -46,6 +50,7 @@ Page({
         img: '../../images/9.png',
         content: '床单被罩',
         list: '床单被罩床单被罩床单被罩',
+        deposit: '10',
         money: '90',
         selected: false,
         num: "1"

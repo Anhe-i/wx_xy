@@ -1,18 +1,21 @@
-.title{
+.title {
   display: flex;
   justify-content: space-between;
   padding: 34rpx;
   position: relative;
 }
-.title-l text{
+
+.title-l text {
   margin-right: 23rpx;
   font-size: 32rpx;
   color: #616161;
 }
-.title-r text{
+
+.title-r text {
   font-size: 45rpx;
 }
-.select{
+
+.select {
   width: 180rpx;
   height: 188rpx;
   background-color: #fff;
@@ -21,123 +24,139 @@
   right: 67rpx;
   top: 86rpx;
 }
-.select view{
+
+.select view {
   background-color: #fff;
   height: 48rpx;
   width: 100%;
   line-height: 48rpx;
-  border-bottom: 1rpx solid rgba(242,242,242,1);
+  border-bottom: 1rpx solid rgba(242, 242, 242, 1);
   font-size: 26rpx;
-  color: #7A7A7A;
+  color: #7a7a7a;
   text-align: center;
 }
-.search{
-  width: 100%;  
+
+.search {
+  width: 100%;
   position: relative;
 }
-.search input{
+
+.search view {
   width: 520rpx;
   height: 68rpx;
   font-size: 24rpx;
-   color: #C7C7C7;
-   line-height: 68rpx;
-   margin: 0 auto;
-  border:1px solid rgba(97,97,97,1);
+  color: #c7c7c7;
+  line-height: 68rpx;
+  margin: 0 auto;
+  border: 1px solid rgba(97, 97, 97, 1);
   border-radius: 34rpx;
   padding-left: 95rpx;
-  
 }
+
 .search text {
   width: 50rpx;
   height: 50rpx;
   position: absolute;
-  left:90rpx;
+  left: 90rpx;
   color: #000;
   top: 6rpx;
   font-size: 57rpx;
 }
-.price{
+
+.price {
   display: flex;
   justify-content: flex-start;
   padding: 0 36rpx;
 }
-.money{
- 
+
+.money {
   line-height: 64rpx;
 }
-.money text{
-   font-size: 32rpx;
+
+.money text {
+  font-size: 32rpx;
   margin-right: 20rpx;
 }
-.img{
+
+.img {
   margin-left: 159rpx;
 }
-.img image{
+
+.img image {
   width: 31rpx;
   height: 64rpx;
-  
 }
-.nav{
+
+.nav {
   padding: 0 18rpx;
   display: flex;
   justify-content: space-around;
 }
-.nav>view{
+
+.nav>view {
   width: 214rpx;
   height: 188rpx;
   text-align: center;
   border-radius: 15rpx;
-  box-shadow:0rpx 13rpx 26rpx 0rpx rgba(16,39,75,0.36);
+  box-shadow: 0rpx 13rpx 26rpx 0rpx rgba(16, 39, 75, 0.36);
 }
-.nav>view>view{
+
+.nav>view>view {
   font-size: 32rpx;
   color: #999;
   padding-top: 10rpx;
 }
-.nav view image{
+
+.nav view image {
   width: 56rpx;
   height: 56rpx;
-   padding-top: 40rpx;
+  padding-top: 40rpx;
 }
-
 
 /* 商品展示 */
-.list{
+
+.list {
   padding: 70rpx 0 32rpx 34rpx;
-  font-size: 32rpx; 
+  font-size: 32rpx;
 }
-.list .icon-qiapianmoshi{
-  font-size: 32rpx; 
+
+.list .icon-qiapianmoshi {
+  font-size: 32rpx;
   padding-right: 22rpx;
 }
 
 /* 展示内容 */
-.list-nav{
+
+.list-nav {
   width: 682rpx;
   height: 454rpx;
   margin: 0 auto;
-  box-shadow:0rpx 13rpx 26rpx 0rpx rgba(16,39,75,0.36);
+  box-shadow: 0rpx 13rpx 26rpx 0rpx rgba(16, 39, 75, 0.36);
   border-radius: 12rpx;
   margin-bottom: 57rpx;
 }
-.list-nav image{
+
+.list-nav image {
   width: 680rpx;
   height: 366rpx;
 }
-.list-t{
+
+.list-t {
   font-size: 28rpx;
   color: #999;
   padding-left: 20rpx;
 }
-.list-b-l{
-   font-size: 28rpx;
-  color: #C2C2C2;
+
+.list-b-l {
+  font-size: 28rpx;
+  color: #c2c2c2;
   float: left;
   padding-left: 20rpx;
 }
-.list-b-r{
+
+.list-b-r {
   font-size: 32rpx;
-  color: #5FA3EF;
+  color: #5fa3ef;
   float: right;
   padding-right: 20rpx;
 }

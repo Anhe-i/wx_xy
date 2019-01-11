@@ -4,16 +4,17 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.1",
-	"appid": "wx976ef01f7ac14d84",
-	"projectname": "my-xy",
+	"appid": "wxd358673a51f4a244",
+	"projectname": "%E6%B4%97%E8%A1%A3",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -36,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 14,
 			"list": [
 				{
 					"id": 0,
@@ -101,7 +102,32 @@
 				{
 					"id": -1,
 					"name": "contact",
-					"pathName": "pages/contact/contact"
+					"pathName": "pages/contact/contact",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "transfer",
+					"pathName": "pages/transfer_station/transfer_station",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "settle",
+					"pathName": "pages/settle/settle",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "assess",
+					"pathName": "pages/assess/assess",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "地址",
+					"pathName": "pages/address/address",
+					"query": ""
 				}
 			]
 		}

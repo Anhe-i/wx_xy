@@ -1,7 +1,9 @@
 /* pages/zhongZhuan/zhongZhuan.wxss */
 
 .contain {
-  width: 100%;
+  margin: 0 auto;
+ width: 365px;
+  
 }
 
 .content1 {
@@ -13,8 +15,8 @@
 }
 
 .contain .image {
-  width: 726rpx;
-  height: 241rpx;
+  width:100%;
+  height: 100%;
 }
 
 .box {

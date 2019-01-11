@@ -80,6 +80,29 @@
   font-size: 28rpx;
 }
 
+.num_d{
+  padding-right:40rpx;
+  color: #5fa3ef;
+  font-size: 28rpx;
+}
+
+.deposit{
+  color: #D3D3D3;
+  font-size: 28rpx;
+  margin-left: 52rpx;
+}
+
+.deposit_d{
+  color: #D3D3D3;
+  font-size: 28rpx;
+  margin-left: 53rpx;
+}
+
+.time{
+  margin-left: 52rpx;
+  margin-top: 10rpx;
+}
+
 .cd-one {
   font-size: 24rpx;
 }
@@ -87,12 +110,8 @@
 .content-b {
   color: #999;
   font-size: 20rpx;
-  padding: 45rpx 47rpx 0 163rpx;
 }
 
-.dd {
-  padding-left: 46rpx;
-}
 
 .btn {
   padding-top: 74rpx;
@@ -179,14 +198,8 @@
   font-size: 24rpx;
 }
 
-.content-b {
-  color: #999;
-  font-size: 20rpx;
-  padding: 45rpx 47rpx 0 163rpx;
-}
-
 .dd {
-  padding-left: 46rpx;
+  padding-left: 20rpx;
 }
 
 .details {
@@ -254,7 +267,6 @@
 .shou-b text {
   color: #999;
   font-size: 24rpx;
-  padding-left: 53rpx;
 }
 
 .look {

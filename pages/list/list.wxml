@@ -13,12 +13,13 @@
       <view class='content-font'>
         <view class='content-f-t'>
           <view class='cd'>{{item.title}}</view>
-          <view class='num'>￥ {{item.price}}</view>
+          <view class='num'>￥{{item.price}}</view>
         </view>
         <view class='content-f-t'>
           <view class='cd cd-one'>{{item.font}}</view>
         </view>
         <view class='content-b'>
+          <view class='deposit' >{{item.deposit}}</view>
           <text class='time'>{{item.time}}</text>
           <text class='dd'>订单数量: {{item.num}}</text>
         </view>
@@ -55,12 +56,14 @@
         <view class='content-font'>
           <view class='content-f-t'>
             <view class='cd'>{{obj.title}}</view>
+            
             <view class='num'>￥ {{obj.price}}</view>
           </view>
           <view class='content-f-t'>
             <view class='cd cd-one'>{{obj.font}}</view>
           </view>
           <view class='content-b'>
+            <view class='deposit'>{{obj.deposit}}</view>
             <text class='time'>{{obj.time}}</text>
             <text class='dd'>订单数量: {{obj.num}}</text>
           </view>
@@ -76,7 +79,7 @@
         去付款
       </view>
     </view>
-    <!--代发货内容  -->
+    <!--待发货内容  -->
     <scroll-view scroll-y class="delivery {{menu1 == 0 ?'show' : 'none'}}">
       <view class='content-t' wx:for="{{arr}}" wx:for-item="arr" wx:key="key">
         <view class='con-tent-img'>
@@ -85,11 +88,14 @@
         <view class='content-font'>
           <view class='content-f-t'>
             <view class='cd'>{{arr.title}}</view>
+            
             <view class='num'>￥ {{arr.price}}</view>
           </view>
           <view class='content-f-t'>
             <view class='cd cd-one'>{{arr.font}}</view>
           </view>
+            <view class='deposit'>{{arr.deposit}}</view>
+
           <view class='content-b'>
             <text class='time'>{{arr.time}}</text>
             <text class='dd'>订单数量: {{arr.num}}</text>
@@ -106,13 +112,14 @@
         <view class='content-font shou2'>
           <view class='content-f-t'>
             <view class='cd'>{{shou.title}}</view>
-            <view class='num'>￥ {{shou.price}}</view>
+            <view class='num_d'>￥ {{shou.price}}</view>
           </view>
           <view class='content-f-t'>
             <view class='cd cd-one'>{{shou.font}}</view>
           </view>
           <view class='bianhao'>
             <text>订单编号:{{shou.number}}</text>
+            <text class='deposit_d'>{{shou.deposit}}</text>
           </view>
           <view class='shou-b'>
             <text class='time'>{{shou.time}}</text>
@@ -141,6 +148,8 @@
           </view>
           <view class='bianhao'>
             <text>订单编号:{{assess_con.number}}</text>
+            <text class='deposit'>{{assess_con.deposit}}</text>
+
           </view>
           <view class='shou-b'>
             <text class='time'>{{assess_con.time}}</text>

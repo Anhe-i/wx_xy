@@ -1,16 +1,15 @@
 <!--pages/editAddress/editAddress.wxml-->
-<!--pages/addAddress/addAddress.wxml-->
 <view class='editAddress'>
 <form bindsubmit='editAddress'>
   <text class='ed-tag'>收货人</text>
   <view class='addList'>
     <view class='addList-one'>
       <text>姓名:</text>
-      <input type='text' placeholder='真实姓名' placeholder-class='inp' value='张大大'></input>
+      <input type='text' placeholder='真实姓名' placeholder-class='inp' value='{{addressData.receivername}}' bindinput='userName'></input>
     </view>
     <view class='addList-one'>
       <text>电话:</text>
-      <input type='number' placeholder='手机号码' placeholder-class='inp' value='1561715141'></input>
+      <input type='number' placeholder='手机号码' placeholder-class='inp' value='{{addressData.telephone}}' bindinput='userPhone'></input>
     </view>
   </view>
   <text class='ed-tag'>收货人</text>
@@ -23,13 +22,13 @@
     </view>
     <view class='addList-two'>
       <text>详细地址:</text>
-      <input type='text' placeholder='街道门牌、楼层房间等信息' placeholder-class='inp' value='河北省唐山市沛县滦河街道2322'></input>
+      <input type='text' placeholder='街道门牌、楼层房间等信息' placeholder-class='inp' value='{{addressData.addressdetails}}' bindinput='userAddressDetails'></input>
     </view>
 
   </view>
   <view class='addDizhi'>
     <button class='del'>删除</button>
-    <button class='save'>保存并使用</button>
+    <button class='save' bindtap='onloadAddress'>保存并使用</button>
   </view>
   </form>
 </view>

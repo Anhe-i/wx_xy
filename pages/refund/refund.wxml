@@ -6,11 +6,28 @@
    </view>
    <view class='refund-con'>
      <view>
+        <text>商品名称：</text>
+        <picker bindchange='spName' value="{{caseIndex1}}" range='{{casArray}}' name="spName" class="{{spActive?'spActive':''}}">
+            <view>
+                <text>{{casArray[casIndex]}}</text>
+            </view>
+        </picker>
+        <!-- <input type='text' placeholder='填写' placeholder-class='refund-con-pla' name="spName"></input> -->
+     </view>
+      <view>
+        <text>数量：</text>
+        <input type='text' placeholder='填写' placeholder-class='refund-con-pla' name="count"></input>
+     </view>
+      <view>
+        <text>押金：</text>
+        <input type='text' placeholder='填写' placeholder-class='refund-con-pla' name="yajin"></input>
+     </view>
+     <view>
         <text>姓名：</text>
         <input type='text' placeholder='填写' placeholder-class='refund-con-pla' name="userName"></input>
      </view>
       <view>
-        <text>号码：</text>
+        <text>电话：</text>
         <input type='number' placeholder='填写' placeholder-class='refund-con-pla' name="userPhone"></input>
      </view>
       <view>

@@ -1,0 +1,15 @@
+<!--pages/settle/settle.wxml-->
+<view class='message'>
+  <image src='../../images/1.jpg'></image>
+  <view class='message-person'>
+    <view>收货人: 不知道</view>
+    <view>0123456789</view>
+  </view>
+
+  <view class='address'>
+    <view></view>
+    <view>收货地址: 河南省郑州市二七区绿地滨湖国际1区1号楼</view>
+  </view>
+  <view>
+  </view>
+</view>
